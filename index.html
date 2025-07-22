@@ -34,7 +34,7 @@
             <section id="works">
                 <h2>作品紹介</h2>
                 <div class="work">
-                    <h3>HuntCore</h3>
+                    <h2>HuntCore</h2>
                     <section class="info">
                         <h3>基本情報</h3>
                         <ul>
@@ -44,7 +44,8 @@
                             <li><strong>動作環境: </strong>Windows10/11</li>
                             <li><strong>使用ツール: </strong>Unity 2022.3.24f1</li>
                             <li><strong>使用言語: </strong>C#/HLSL(Unlit Shader)</li>
-                            <li><strong>GitHub: </strong>
+                            <li>
+                                <strong>GitHub: </strong>
                                 <a href="https://github.com/YudukiIrie/HuntCore" target="_blank">
                                     https://github.com/YudukiIrie/HuntCore
                                 </a>
@@ -55,6 +56,34 @@
                     <section class="tech">
                         <h3>技術的アピールポイント</h3>
 
+                        <div class="point">
+                            <h3>ステートパターンを用いた状態管理</h3>
+                            <ul>
+                                <li>状態の重複を避けることでバグを発生させない</li>
+                                <li>ステート毎にクラス分けを行うことで、煩雑なコードを避ける</li>
+                                <li>インターフェース継承により各ステートを一括管理</li>
+                                <li>
+                                    該当コード: 
+                                    <ul>
+                                        <li>
+                                            <a href="https://github.com/YudukiIrie/HuntCore/blob/master/Assets/Scripts/System/StateMachine.cs">
+                                                StateMachine.cs
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/YudukiIrie/HuntCore/blob/master/Assets/Scripts/Stage/Player/PlayerStateMachine.cs">
+                                                PlayerStatemachine.cs
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/YudukiIrie/HuntCore/blob/master/Assets/Scripts/Stage/Player/State/PlayerIdleState.cs">
+                                                PlayerIdleState.cs(同一フォルダ内に他ステートあり)
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </section>
                 </div>
             </section>

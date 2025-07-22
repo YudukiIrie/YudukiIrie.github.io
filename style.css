@@ -62,3 +62,8 @@ footer{
     background: #333;
     color: white;
 }
+
+.point ul ul{
+    list-style-type: circle;
+    margin-left: 1.2em;
+}
