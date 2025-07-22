@@ -63,6 +63,14 @@ footer{
     color: white;
 }
 
+.point{
+    background: #fff;
+    border-radius: 8px;
+    padding: 1em;
+    margin-bottom: 1em;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
 .point ul ul{
     list-style-type: circle;
     margin-left: 1.2em;
