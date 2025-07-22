@@ -66,22 +66,132 @@
                                     該当コード: 
                                     <ul>
                                         <li>
-                                            <a href="https://github.com/YudukiIrie/HuntCore/blob/master/Assets/Scripts/System/StateMachine.cs">
+                                            <a href="https://github.com/YudukiIrie/HuntCore/blob/master/Assets/Scripts/System/StateMachine.cs" target="_blank">
                                                 StateMachine.cs
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="https://github.com/YudukiIrie/HuntCore/blob/master/Assets/Scripts/Stage/Player/PlayerStateMachine.cs">
+                                            <a href="https://github.com/YudukiIrie/HuntCore/blob/master/Assets/Scripts/Stage/Player/PlayerStateMachine.cs" target="_blank">
                                                 PlayerStatemachine.cs
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="https://github.com/YudukiIrie/HuntCore/blob/master/Assets/Scripts/Stage/Player/State/PlayerIdleState.cs">
+                                            <a href="https://github.com/YudukiIrie/HuntCore/blob/master/Assets/Scripts/Stage/Player/State/PlayerIdleState.cs" target="_blank">
                                                 PlayerIdleState.cs(同一フォルダ内に他ステートあり)
                                             </a>
                                         </li>
                                     </ul>
                                 </li>
+                            </ul>
+
+                            <h4>自作シェーダーによる残像の生成</h4>
+                            <ul>
+                                <li>HLSLとShaderLabによる半透明のシェーダーにより残像感を表現</li>
+                                <li>生成過多を防ぐためのオブジェクトプールによる管理</li>
+                                <li>
+                                    該当コード:
+                                    <ul>
+                                        <li>
+                                            <a href="https://github.com/YudukiIrie/HuntCore/blob/master/Assets/Scripts/AfterImage.shader" target="_blank">
+                                                AfterImage.shader
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/YudukiIrie/HuntCore/blob/master/Assets/Scripts/System/ObjectPool.cs" target="_blank">
+                                                ObjectPool.cs
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/YudukiIrie/HuntCore/blob/master/Assets/Scripts/Stage/Player/Weapon/WeaponAfterImageSpawner.cs" target="_blank">
+                                                WeaponAfterImageSpawner.cs
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/YudukiIrie/HuntCore/blob/master/Assets/Scripts/Stage/Player/Weapon/WeaponAfterImage.cs" target="_blank">
+                                                WeaponAfterImage.cs
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <h4>数学を用いた敵AI</h4>
+                            <ul>
+                                <li>大元のEnemyクラスに複数の計算メソッドを用意</li>
+                                <li>該当コード:</li>
+                                <ul>
+                                    <li>
+                                        <a href="https://github.com/YudukiIrie/HuntCore/blob/master/Assets/Scripts/Stage/Enemy/Enemy.cs" target="_blank">
+                                            Enemy.cs
+                                        </a>
+                                    </li>
+                                </ul>
+                            </ul>
+
+                            <h4>スクリプタブルオブジェクトによるデータ管理</h4>
+                            <ul>
+                                <li>1つのクラスにまとめることでデータを一括管理可能</li>
+                                <li>エディタ上での容易な変更が可能</li>
+                                <li>敵は複数体に対応できるようList化</li>
+                                <li>該当コード:</li>
+                                <ul>
+                                    <li>
+                                        <a href="https://github.com/YudukiIrie/HuntCore/blob/master/Assets/Scripts/Stage/Player/PlayerData.cs" target="_blank">
+                                            PlayerData.cs
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/YudukiIrie/HuntCore/blob/master/Assets/Scripts/Stage/Player/Weapon/WeaponData.cs" target="_blank">
+                                            WeaponData.cs
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/YudukiIrie/HuntCore/blob/master/Assets/Scripts/Stage/Enemy/EnemyDataList.cs" target="_blank">
+                                            EnemyDataList.cs
+                                        </a>
+                                    </li>
+                                </ul>
+                            </ul>
+
+                            <h4>自作コライダーを用いた攻撃用当たり判定</h4>
+                            <ul>
+                                <li>OBB、球体による当たり判定に対応</li>
+                                <li>当たり判定計算用クラスを用意し、任意のコライダーを指定可能</li>
+                                <li>コライダー用基底クラスを用意することで、形状・状態の増加や変化に対応可能</li>
+                                <li>可視化による視覚的なデバッグが可能</li>
+                                <li>該当コード:</li>
+                                <ul>
+                                    <li>
+                                        <a href="https://github.com/YudukiIrie/HuntCore/blob/master/Assets/Scripts/Stage/HitDitection/Colliders/HitCollider.cs" target="_blank">
+                                            HitCollider.cs
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/YudukiIrie/HuntCore/blob/master/Assets/Scripts/Stage/HitDitection/Colliders/HitSphere.cs" target="_blank">
+                                            HitSphere.cs
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/YudukiIrie/HuntCore/blob/master/Assets/Scripts/Stage/HitDitection/Colliders/OBB.cs" target="_blank">
+                                            OBB.cs
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/YudukiIrie/HuntCore/blob/master/Assets/Scripts/Stage/HitDitection/Colliders/VisualCollider.cs" target="_blank">
+                                            VisualCollider.cs
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/YudukiIrie/HuntCore/blob/master/Assets/Scripts/Stage/HitDitection/OBBHitChecker.cs" target="_blank">
+                                            HitChecker.cs
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/YudukiIrie/HuntCore/blob/master/Assets/Scripts/Stage/HitDitection/OBBVisualizer.cs" target="_blank">
+                                            ColliderVisualizer.cs
+                                        </a>
+                                    </li>
+                                </ul>
                             </ul>
                         </div>
                     </section>
