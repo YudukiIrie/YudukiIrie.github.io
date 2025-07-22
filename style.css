@@ -84,7 +84,7 @@ footer{
 
 .controls th, 
 .controls td{
-    border: 1px solid #000000;
+    border: 1px solid #333;
     padding: 0.5em;
     text-align: center;
 }
