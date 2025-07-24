@@ -334,8 +334,34 @@
             </section>
         </main>
 
+        <button id="toTopBtn">▲ TOP</button>
+
         <footer>
             <p>&copy; 2025 入江悠月</p>
         </footer>
+
+        <script>
+            const toTopBtn = document.getElementById("toTopBtn");
+
+            // スクロール量が100px超えたらボタン表示
+            window.addEventListener("scroll", ()=>
+            {
+                if(window.pageYOffset > 100)
+                {
+                    toTopBtn.classList.add("show");
+                }
+                else 
+                {
+                    toTopBtn.classList.remove("show");
+                }
+            });
+
+            // クリックで最上部へ戻る
+            toTopBtn.addEventListener("click", ()=>
+            {
+                window.scrollTo(({ top: 0, behaviour: "smooth"}));
+            });
+        </script>
+
     </body>
 </html>
