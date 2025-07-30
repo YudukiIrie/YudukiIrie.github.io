@@ -159,8 +159,8 @@
 
                             <h4>自作コライダーを用いた攻撃用当たり判定</h4>
                             <ul>
-                                <li>OBB、球体による当たり判定に対応</li>
-                                <li>当たり判定計算用クラスを用意し、任意のコライダーを指定可能</li>
+                                <li>OBB、球体、カプセルによる当たり判定に対応</li>
+                                <li>当たり判定計算用クラスを複数用意し、任意のコライダーを指定可能</li>
                                 <li>コライダー用基底クラスを用意することで、形状・状態の増加や変化に対応可能</li>
                                 <li>可視化による視覚的なデバッグが可能</li>
                                 <li>該当コード:</li>
@@ -171,23 +171,53 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://github.com/YudukiIrie/HuntCore/blob/master/Assets/Scripts/Stage/HitDitection/Colliders/HitSphere.cs" target="_blank">
-                                            HitSphere.cs
-                                        </a>
-                                    </li>
-                                    <li>
                                         <a href="https://github.com/YudukiIrie/HuntCore/blob/master/Assets/Scripts/Stage/HitDitection/Colliders/OBB.cs" target="_blank">
                                             OBB.cs
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://github.com/YudukiIrie/HuntCore/blob/master/Assets/Scripts/Stage/HitDitection/Colliders/VisualCollider.cs" target="_blank">
-                                            VisualCollider.cs
+                                        <a href="https://github.com/YudukiIrie/HuntCore/blob/master/Assets/Scripts/Stage/HitDitection/Colliders/HitSphere.cs" target="_blank">
+                                            HitSphere.cs
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/YudukiIrie/HuntCore/blob/master/Assets/Scripts/Stage/HitDitection/Colliders/HitCapsule.cs" target="_blank">
+                                            HitCapsule.cs
                                         </a>
                                     </li>
                                     <li>
                                         <a href="https://github.com/YudukiIrie/HuntCore/blob/master/Assets/Scripts/Stage/HitDitection/OBBHitChecker.cs" target="_blank">
                                             HitChecker.cs
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/YudukiIrie/HuntCore/blob/master/Assets/Scripts/Stage/HitDitection/Caliculator/OBBHitChecker.cs" target="_blank">
+                                            OBBHitChecker.cs
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/YudukiIrie/HuntCore/blob/master/Assets/Scripts/Stage/HitDitection/Caliculator/SphereOBBHitChecker.cs" target="_blank">
+                                            ShpereOBBHitChecker.cs
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/YudukiIrie/HuntCore/blob/master/Assets/Scripts/Stage/HitDitection/Caliculator/CapsuleOBBHitChecker.cs" target="_blank">
+                                            CapsuleOBBHitChecker.cs
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/YudukiIrie/HuntCore/blob/master/Assets/Scripts/Stage/HitDitection/Caliculator/CapsuleHitChecker.cs" target="_blank">
+                                            CapsuleHitChecker.cs
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/YudukiIrie/HuntCore/blob/master/Assets/Scripts/Stage/HitDitection/Caliculator/SphereCapsuleHitChecker.cs" target="_blank">
+                                            SphereCapsuleHitChecker.cs
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/YudukiIrie/HuntCore/blob/master/Assets/Scripts/Stage/HitDitection/Colliders/VisualCollider.cs" target="_blank">
+                                            VisualCollider.cs
                                         </a>
                                     </li>
                                     <li>
